@@ -10,7 +10,6 @@
 body {
   font-family: var(--caption-font-family);
   background-color: var(--branding-color);
-  color: var(--secondary-color);
 }
 
 .container {
@@ -70,12 +69,51 @@ header a {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding:100px 0;
 }
 
-footer {
-  padding: 60px 0;
+.family {
+  max-width: 100%;
 }
 
+.family2 {
+  min-width: 100%;
+}
+
+main h2 {
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+main h3 {
+  font-weight: 700px;
+  font-size: 32px;
+  line-height: 1.5;
+  color: #272044;
+  margin:0;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-w-first-narrow {
+grid-template-columns: 1fr 2fr 2fr;
+}
+
+main p {
+  font-weight: 400px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
 
 .poppins-thin {
   font-family: "Poppins", sans-serif;
@@ -187,8 +225,7 @@ footer {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  gap: 20px;
+  gap: 56px;
 
 }
 
@@ -198,13 +235,16 @@ footer {
   background-repeat: no-repeat;
   color: var(--secondary-color);
   background-size: cover;
-  padding: 100px 0;
 }
 
 footer h3 {
   font-weight:700;
   font-size: 20px;
   line-height: 30px;
+}
+
+main {
+  background-color: var(--secondary-color);
 }
 
 footer p {
@@ -244,6 +284,19 @@ footer a {
 
   header h3 {
     font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .family2 {
+    display: none;
   }
 }
 
