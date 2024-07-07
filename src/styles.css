@@ -1,10 +1,9 @@
 :root {
-    --branding-color: #272044;
-    --caption-font-family: "Poppins", sans-serif;
-    --secondary-color: white;
-    --tertiary-color: rgb(106, 2, 106);
-    --purple: #885DF1;
-;
+  --branding-color: #272044;
+  --caption-font-family: "Poppins", sans-serif;
+  --secondary-color: white;
+  --tertiary-color: rgb(106, 2, 106);
+  --purple: #885df1;
 }
 
 body {
@@ -18,7 +17,13 @@ body {
 }
 
 header {
-  background-image: linear-gradient(0deg, #030504 0%, rgba(2, 4, 3, 0.30) 51.55%, rgba(11, 6, 32, 0.00) 100%), url("../images/IMG_9745.jpeg");
+  background-image: linear-gradient(
+      0deg,
+      #030504 0%,
+      rgba(2, 4, 3, 0.3) 51.55%,
+      rgba(11, 6, 32, 0) 100%
+    ),
+    url("../images/IMG_9745.jpeg");
   background-repeat: no-repeat;
   color: var(--secondary-color);
   background-size: cover;
@@ -29,7 +34,7 @@ header {
 
 header h1 {
   font-weight: 700px;
-  font-size:84px;
+  font-size: 84px;
   line-height: 1.5;
   padding-bottom: 150px;
   margin: 0;
@@ -37,15 +42,15 @@ header h1 {
 
 header h2 {
   font-weight: 400px;
-  font-size:40px;
-  line-height: 1.5; 
+  font-size: 40px;
+  line-height: 1.5;
   padding-bottom: 120px;
 }
 
 header h3 {
   font-weight: 400px;
   font-size: 24px;
-  line-height: 1.5; 
+  line-height: 1.5;
   letter-spacing: 3px;
   margin: 0;
 }
@@ -54,7 +59,7 @@ header a {
   display: inline-block;
   padding: 16px 32px;
   border-radius: 100px;
-  background: var(--Purple, #885DF1);
+  background: var(--Purple, #885df1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: var(--secondary-color);
   text-align: center;
@@ -69,11 +74,17 @@ header a {
 section {
   max-width: 100%;
   margin: 0 auto;
-  padding:100px;
+  padding: 100px;
 }
 
 section.music {
-  background: linear-gradient(0deg, rgba(3, 5, 4, 0.90) 0%, rgba(2, 4, 3, 0.70) 51.55%, rgba(11, 6, 32, 0.60) 100%), url("/images/IMG_4066.png") lightgray 50% / cover no-repeat;
+  background: linear-gradient(
+      0deg,
+      rgba(3, 5, 4, 0.9) 0%,
+      rgba(2, 4, 3, 0.7) 51.55%,
+      rgba(11, 6, 32, 0.6) 100%
+    ),
+    url("/images/IMG_4066.png") lightgray 50% / cover no-repeat;
   max-width: 100%;
   height: auto;
 }
@@ -97,7 +108,7 @@ section.music h3 {
 }
 
 section.music h2 {
-  color: var(--Light, #FFF);
+  color: var(--Light, #fff);
   text-align: center;
   font-size: 48px;
   font-style: normal;
@@ -130,7 +141,7 @@ main h3 {
   font-size: 32px;
   line-height: 1.5;
   color: #272044;
-  margin:0;
+  margin: 0;
 }
 
 .grid-2-columns {
@@ -138,12 +149,11 @@ main h3 {
 }
 
 .grid-3-columns-w-first-narrow {
-grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr 2fr;
 }
 
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
-
 }
 
 .card {
@@ -153,7 +163,6 @@ grid-template-columns: 1fr 2fr 2fr;
 
 .card-content {
   padding: 24px 32px;
-  
 }
 
 .card img {
@@ -161,8 +170,17 @@ grid-template-columns: 1fr 2fr 2fr;
 }
 
 .img-responsive {
-  max-width:100%;
+  width: 100%;
   display: block;
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 16/ 9;
+}
+
+.card-header.grid {
+  gap: 0;
 }
 
 .card h4 {
@@ -198,7 +216,7 @@ grid-template-columns: 1fr 2fr 2fr;
   justify-content: center;
   padding: 16px 32px;
   border-radius: 100px;
-  background: var(--Purple, #885DF1);
+  background: var(--Purple, #885df1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   color: var(--secondary-color);
   font-size: 16px;
@@ -328,19 +346,24 @@ main p {
 .grid {
   display: grid;
   gap: 56px;
-
 }
 
 footer {
   color: var(--secondary-color);
-    background-image: linear-gradient(0deg, #030504 0%, rgba(39, 32, 68, 0.30) 100%, rgba(39, 32, 68, 0.00) 100%), url("../images/IMG_5462.jpeg");
+  background-image: linear-gradient(
+      0deg,
+      #030504 0%,
+      rgba(39, 32, 68, 0.3) 100%,
+      rgba(39, 32, 68, 0) 100%
+    ),
+    url("../images/IMG_5462.jpeg");
   background-repeat: no-repeat;
   color: var(--secondary-color);
   background-size: cover;
 }
 
 footer h3 {
-  font-weight:700;
+  font-weight: 700;
   font-size: 20px;
   line-height: 30px;
 }
@@ -349,8 +372,34 @@ main {
   background-color: var(--secondary-color);
 }
 
+.photos {
+  background-color: var(--secondary-color);
+  text-align: center; 
+  padding: 30px 30px;
+}
+
+.photos h3 {
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.photos h2 {
+  font-weight: 700px;
+  font-size: 32px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
 footer p {
-  font-weight:400;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   opacity: 0.8;
@@ -367,7 +416,8 @@ footer li {
 }
 
 footer a {
-  color:white; opacity: 0.7;
+  color: white;
+  opacity: 0.7;
   text-decoration: none;
 }
 
@@ -401,4 +451,3 @@ footer a {
     display: none;
   }
 }
-
