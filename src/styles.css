@@ -123,6 +123,7 @@ section.music h2 {
 
 .family2 {
   min-width: 100%;
+  filter: grayscale(80%)
 }
 
 main h2 {
@@ -154,6 +155,7 @@ main h3 {
 
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 20px;
 }
 
 .card {
