@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 100% !important;
   margin: 0 auto;
 }
 
@@ -452,4 +452,14 @@ footer a {
   .family2 {
     display: none;
   }
+}
+
+@media screen and (max-width: 667px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
 }
